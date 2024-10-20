@@ -1,0 +1,411 @@
+<html>
+<head>
+    <title>Tablas en html</title>
+    <link rel="stylesheet" href="../css/style.page.css" type="text/css">
+    <style type="text/css">
+        #tabla_uno{
+            width:100%;
+            text-align: center;
+            margin: 0 auto;
+            color: #ffdbd7;
+            border-style: solid;
+            border-spacing: 10px;
+            border-color: #ffdbd7;
+            border-width: 3px;
+        }
+        
+        #tabla_uno th{
+            background-color: #ffb2c1;
+            color: #CE7095;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #ffdbd7;
+        }
+        #tabla_uno td{
+            background-color: #CE7095;
+            color: #ffdbd7;
+            text-align: left;
+            margin: 10px;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #ffdbd7;
+            border-radius: 5px;
+            padding: 10px; 
+            text-align: center;
+        }
+        /*#TABLA2{
+            color: #ffdbd7;
+        }
+        #TABLA2 td{
+            height: 22px;
+            padding: 5px;
+            color: #ffb2c1;
+        }*/
+        .celda_centrada{
+            text-align: center;
+            padding: 0px;
+            background-color:#ffb2c1;
+        }
+        .tabla_dos{
+            width: 700px; 
+            border-collapse: collapse;
+            border-color: #ffb2c1;
+            color: #CE7095;
+            border-style:solid;
+            margin: 0 auto;
+        }
+        .tabla_dos td, .tabla_dos th{
+            /*width: 150px;*/
+            border-color: #855e6e;
+            color: #CE7095;
+            padding: 10px;
+            border-style: dashed;
+        }
+        .tabla_dos th{ 
+            background-color: #ffdbd7;
+        }
+        .tabla_dos td{
+            background-color: #ffdbd7;
+            color: #CE7095;
+            height: 50px;
+            padding: 5px;
+        }
+        .celda_centrada{
+            text-align: center;
+            padding: 0px;
+            background-color: #ffdbd7;
+        }
+        #tabla_zebra{
+            width: 90%;
+            margin: 0 auto;
+        }
+        #tabla_zebra tr:nth-child(even){
+            background-color: #ffdbd7;
+        }
+        #tabla_zebra tbody tr:nth-child(odd){
+            background-color:#ffb2c1;
+        }
+        #tabla_zebra thead tr{
+            background-color: #CE7095;
+        }
+        .tabla_hover{
+            width: 80%;
+            margin: 0 auto;
+            color: #855e6e;
+            border-collapse: collapse;
+        }
+        .tabla_hover tr{
+            border-color: #855e6e;
+            padding: 10px;
+            border: 2px solid #ffb2c1;
+        }
+        .tabla_hover tr td{
+            background-color: #ffb2c1;
+            border: 2px solid #ffdbd7;
+            padding: 10px;
+        }
+        .tabla_hover tbody tr:hover{
+            background-color: #CE7095;
+            color:#ffdbd7;
+        }
+        .centrar{
+            text-align: center;
+        }
+    
+    </style>
+    </head>
+<body>
+    <header>
+    <h1>TABLAS EN HTML</h1>
+    </header>
+    <nav>
+  <ul>
+            <li><a href="vvalpaginaweb.html">Inicio</a></li>
+            <li><a href="listasvall.html">Listas</a></li>
+            <li><a href="enlaces.html">Enlaces</a></li>
+            <li><a href="tablass.html">Tablas</a></li>
+            <li><a href="imagenes.html">Imagenes</a></li>
+            <li><a href="audiio.html">Audio</a></li>
+            <li><a href="videoo.html">Video</a></li>
+            <li><a href="foormulariovall.html">Formulario</a></li>
+         </ul>
+    </nav>
+    <main>
+        <section style="overflow-x: auto">
+     <h2>Tablas</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat dui eu ex vestibulum, id porta enim sollicitudin. Curabitur at mi condimentum, sagittis nisi quis, scelerisque dolor. Nunc faucibus hendrerit velit, ac tincidunt libero maximus eu. Quisque sodales porta placerat. Sed non erat ante. Maecenas tristique faucibus aliquet. In neque dui, fringilla id neque non, mattis iaculis ante. Nullam imperdiet elit quis sollicitudin dignissim. Integer leo dui, imperdiet sed fermentum vitae, congue quis purus. Cras viverra risus a rutrum venenatis. Phasellus sed euismod justo, eget placerat lectus. Proin non purus mi. Maecenas vel ligula metus. Suspendisse consequat porttitor vulputate. Integer.</p>
+        <table border="1" id="tabla_uno">
+            <thead>
+            <tr> 
+                <th>Matricula</th>
+                <th>Nombre</th>
+                <th>Apellido Paterno</th>
+                <th>Apellido Materno</th>
+                <th>Facultad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>202089768</td>
+                    <td>Ian</td>
+                    <td>Guzmán</td>
+                    <td>Garcia</td>
+                    <td>Arquitectura</td>
+                </tr>
+                <tr>
+                    <td>202467890</td>
+                    <td>Estiven</td>
+                    <td>Alvarez</td>
+                    <td>Cortes</td>
+                    <td>Arquitectura</td>
+                </tr>
+                <tr>
+                    <td>202178903</td>
+                    <td>Daniel</td>
+                    <td>Martinéz</td>
+                    <td>Pérez</td>
+                    <td>Urbano</td>
+                </tr>
+                <tr>
+                    <td>202378940</td>
+                    <td>Hannia</td>
+                    <td>Pérez</td>
+                    <td>Cruz</td>
+                    <td>Arquitectura</td>
+                </tr>
+                <tr>
+                    <td>202078351</td>
+                    <td>Xavier</td>
+                    <td>Lopez</td>
+                    <td>Garcia</td>
+                    <td>Diseño Gráfico</td>
+                </tr>
+                <tr>
+                    <td>202083903</td>
+                    <td>Liam</td>
+                    <td>Pierre</td>
+                    <td>Paredes</td>
+                    <td>Diseño Gráfico</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+             </table>
+        </section>
+        
+          <section style="overflow-x: auto">
+     <h2>Tablas</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat dui eu ex vestibulum, id porta enim sollicitudin. Curabitur at mi condimentum, sagittis nisi quis, scelerisque dolor. Nunc faucibus hendrerit velit, ac tincidunt libero maximus eu. Quisque sodales porta placerat. Sed non erat ante. Maecenas tristique faucibus aliquet. In neque dui, fringilla id neque non, mattis iaculis ante. Nullam imperdiet elit quis sollicitudin dignissim. Integer leo dui, imperdiet sed fermentum vitae, congue quis purus. Cras viverra risus a rutrum venenatis. Phasellus sed euismod justo, eget placerat lectus. Proin non purus mi. Maecenas vel ligula metus. Suspendisse consequat porttitor vulputate. Integer.</p>
+              <table id= "TABLA2" class="tabla_dos">
+                <thead>
+            <tr> 
+                <th style="width:200px;">Nombre</th>
+                <th style="width:100px;">Edad</th>
+                <th style="width:200px;" Colspan="2">Celular</th>
+                <th style="width:100px;">Cooperación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Julian Rodriguez Lopez</td>
+                    <td style="text-align:center; padding:0px;">18</td>
+                    <td>2246789350</td>
+                    <td>2246789350</td>
+                    <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$50</td>
+                </tr>
+                <tr>
+                    <td>Felipe Juarez Duran</td>
+                    <td style="text-align:center; padding:0px;">20</td>
+                    <td>2221678223</td>
+                    <td>2221678223</td>
+                    <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$100</td>
+                </tr>
+                <tr>
+                    <td>Aaron Pimentel Torres</td>
+                    <td style="text-align:center; padding:0px;">19</td>
+                    <td>2226288957</td>
+                    <td>2226288957</td>
+                    <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$150</td>
+                </tr>
+                <tr>
+                    <td>Nicole Castro Rios</td>
+                    <td style="text-align:center; padding:0px;">18</td>
+                    <td>2242563789</td>
+                    <td>2242563789</td>
+                    <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$80</td>
+                </tr>
+                <tr>
+                    <td>Maria Luisa Jimenez Jimenez</td>
+                    <td style="text-align:center; padding:0px;">18</td>
+                    <td>2222687931</td>
+                    <td>2222687931</td>
+                    <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$100</td>
+                </tr>
+                <tr>
+                    <td>Luis Alfonso Lopez Mendoza</td>
+                    <td style="text-align:center; padding:0px;">19</td>
+                    <td>2242789027</td>
+                    <td>2242789027</td>
+                    <td style="text-align: center; padding: 0px; background-color: #ffdbd7;">$100</td>
+                </tr>
+            </tbody>
+            <tfoot> 
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Total</td>
+                  <td class="celda_centrada" style="background-color:#ffb2c1; color: #855e6e; ">$580</td>
+                  </tfoot>
+              </table>
+        </section>
+        
+          <section style="overflow-x: auto">
+     <h2>Tablas</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat dui eu ex vestibulum, id porta enim sollicitudin. Curabitur at mi condimentum, sagittis nisi quis, scelerisque dolor. Nunc faucibus hendrerit velit, ac tincidunt libero maximus eu. Quisque sodales porta placerat. Sed non erat ante. Maecenas tristique faucibus aliquet. In neque dui, fringilla id neque non, mattis iaculis ante. Nullam imperdiet elit quis sollicitudin dignissim. Integer leo dui, imperdiet sed fermentum vitae, congue quis purus. Cras viverra risus a rutrum venenatis. Phasellus sed euismod justo, eget placerat lectus. Proin non purus mi. Maecenas vel ligula metus. Suspendisse consequat porttitor vulputate. Integer.</p>
+              <table id="tabla_zebra">
+              <thead>
+                  <tr>
+                  <th>Nombre</th>
+                  <th>Edad</th>
+                  <th>Deporte</th>
+                  <th>Telefono</th>
+                  <th>Email</th>    
+                  </tr>
+                  </thead>
+              <tbody>
+                  <tr>
+                  <td>Estiven Alvarez Cortes</td>
+                  <td>21</td>
+                  <td>Yoga</td> 
+                  <td>2678936528</td>
+                  <td>Etv.cs58@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Alejandra Smith Pérez</td>
+                  <td>24</td>
+                  <td>Basquetbool</td> 
+                  <td>6789246437</td>
+                  <td>Clarity.look@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Sara Iturralde Jimenez</td>
+                  <td>20</td>
+                  <td>Pilates</td> 
+                  <td>133284452</td>
+                  <td>feel.hi12@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Salma Rios Martinez</td>
+                  <td>21</td>
+                  <td>Atletismo</td> 
+                  <td>7289300928</td>
+                  <td>kim.blakc34@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Berenice Aguilar Sanchez</td>
+                  <td>19</td>
+                  <td>Tiro con Arco</td> 
+                  <td>6735281902</td>
+                  <td>Bbc562@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Jaime Armou Lopez</td>
+                  <td>23</td>
+                  <td>Natación</td> 
+                  <td>6782536781</td>
+                  <td>Jaime.lopez02@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Ashley Lara Cruz</td>
+                  <td>22</td>
+                  <td>Karate</td> 
+                  <td>8947620213</td>
+                  <td>aashlara.89@gmail.com</td>
+                  </tr>
+                  </tbody>
+              </table>
+        </section>
+      <section style="overflow-x: auto">
+     <h2>Tablas</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat dui eu ex vestibulum, id porta enim sollicitudin. Curabitur at mi condimentum, sagittis nisi quis, scelerisque dolor. Nunc faucibus hendrerit velit, ac tincidunt libero maximus eu. Quisque sodales porta placerat. Sed non erat ante. Maecenas tristique faucibus aliquet. In neque dui, fringilla id neque non, mattis iaculis ante. Nullam imperdiet elit quis sollicitudin dignissim. Integer leo dui, imperdiet sed fermentum vitae, congue quis purus. Cras viverra risus a rutrum venenatis. Phasellus sed euismod justo, eget placerat lectus. Proin non purus mi. Maecenas vel ligula metus. Suspendisse consequat porttitor vulputate. Integer.</p>
+              <table id="" class="tabla_hover">
+              <thead>
+                  <tr>
+                  <th>Nombre</th>
+                  <th>Edad</th>
+                  <th>Deporte</th>
+                  <th>Telefono</th>
+                  <th>Email</th>    
+                  </tr>
+                  </thead>
+              <tbody>
+                  <tr>
+                  <td>Estiven Alvarez Cortes</td>
+                  <td class="centrar">21</td>
+                  <td class="centrar">Yoga</td> 
+                  <td class="centrar" >2678936528</td>
+                  <td>Etv.cs58@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Alejandra Smith Pérez</td>
+                  <td class="centrar">24</td>
+                  <td class="centrar">Basquetbool</td> 
+                  <td class="centrar" >6789246437</td>
+                  <td>Clarity.look@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Sara Iturralde Jimenez</td>
+                  <td class="centrar" >20</td>
+                  <td class="centrar" >Pilates</td> 
+                  <td class="centrar" >133284452</td>
+                  <td>feel.hi12@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Salma Rios Martinez</td>
+                  <td class="centrar" >21</td>
+                  <td class="centrar" >Atletismo</td> 
+                  <td class="centrar" >7289300928</td>
+                  <td>kim.blakc34@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Berenice Aguilar Sanchez</td>
+                  <td class="centrar" >19</td>
+                  <td class="centrar" >Tiro con Arco</td> 
+                  <td class="centrar" >6735281902</td>
+                  <td>Bbc562@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Jaime Armou Lopez</td>
+                  <td class="centrar" >23</td>
+                  <td class="centrar" >Natación</td> 
+                  <td class="centrar" >6782536781</td>
+                  <td>Jaime.lopez02@gmail.com</td>
+                  </tr>
+                  
+                  <tr>
+                  <td>Ashley Lara Cruz</td>
+                  <td class="centrar" >22</td>
+                  <td class="centrar" >Karate</td> 
+                  <td class="centrar" >8947620213</td>
+                  <td>aashlara.89@gmail.com</td>
+                  </tr>
+                  </tbody>
+              </table>
+        </section>
+        
+    </main>
+    <footer> 
+        <h5> Elaborado por Valeria Pérez</h5>
+    </footer>
+    </body>
+</html>

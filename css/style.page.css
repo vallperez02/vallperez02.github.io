@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+header,nav,main,footer¨{
+    /*width: 960px;*/
+    width: 100%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    height: 100px;
+    background-color: #ffb2c1; 
+    color: #f7f1e1;
+    text-align: center;
+} 
+nav{
+    height: 100px;
+    background-color: #CE7095;
+}
+main{
+    height: auto;
+    background-color: #ffdbd7;
+    padding: 80px;
+}  
+section{
+    /*width: 800px;*/
+    width: 80%;
+    height:auto;
+    background-color: #855e6e;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    padding:30px;
+}
+footer{
+    height: 50px;
+    background-color:#855e6e;
+    color: #ffdbd7;
+    text-align: center;
+}
+h1{
+ font-family: "Lobster", sans-serif;  
+}
+h1, h5{
+    text-align:center;
+}
+ul{
+    text-align:center;
+}
+ul li{
+    display:inline-block;
+    width:10%;
+    padding:20px;
+    background-color:#855e6e;
+    color:#CE7095; 
+    
+}
+nav ul li a:visited, nav ul li a:link{
+    color:  #ffdbd7;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color: #ffb2c1; 
+  
+}
+nav ul li a:link{
+    color:#ffdbd7;
+}
+img{
+width: 400px;
+height: auto;
+display: block;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto; 
+}
+h2,p{
+ color: #ffb2c1; 
+}
+h2{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-family: "Roboto Slab", serif;
+}
+#f111{
+    width: 300px;
+    float: right;
+    
+}
+
+#f11{
+    width: 300px;
+    float: right;
+}
+#f1{
+width: 300px;
+float: left;
+margin-right: 20px;
+}
+main nav{
+    width:800px;
+    padding: 30px;
+}
+#icono{
+    width:32px;
+    height: auto;
+
+}
+p{
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Rubik", sans-serif;
+}
+#fondo_section{
+    background-image: url("../medios/imagenes/pantalla redbull.jfif");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    filter: opacity(50%);
+}
+#fondo_section p, #fondo_section h2{
+    color: #ffdbd7;
+}
+#filtro_imagen{
+    text-align: center;
+}
+
+#filtro_imagen img{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    padding: 10px;
+}
+#img1{
+    filter: brightness(150%);
+}
+#img2{
+    filter: contrast(70%);
+}
+#img3{
+    filter: grayscale(100%);
+}
+#img4{
+    filter:invert(100%);
+}
+#img5{
+  filter: opacity(0.5);   
+}
+#img6{
+    filter:sepia(100%);
+}
+#img7{
+    filter: saturate(150%);
+}
+#img8{
+    filter: blur(2px);
+}
+#img9{
+filter: drop-shadow(5px 10px 20px red);
+}
+#img10{
+    filter: contrast(40%) blur(2px);
+}
+#img11{
+    filter: hue-rotate(30deg);
+}
+iframe{
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+

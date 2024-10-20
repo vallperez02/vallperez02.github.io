@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="../css/style.page.css"" rel="stylesheet" type="text/css">
+	<style type="text/css"> 
+		form{
+			width: 50%;
+			height:auto;
+			padding: 30px;
+			background-color:#B31958;
+			color: #FB9999;
+			margin: 0 auto;
+		}
+		label, input{
+			display: block;
+			margin left: 10px;
+		}
+		label{
+			padding bottom: 10px;
+			padding-top: 10px;
+		}
+		input[type=text],input[type=password], input[type="number"],input[type="tel"], [type="nombre"], [type="radio"] select{
+			width: 100%;
+			color: #FB9999;
+			padding: 8px;
+			font-weight: bold;
+			border: 2px solid #E55E95;
+			border-radius: 7px;
+			background-color: #D7045A;
+		}
+		input[type=submit]{
+			width: 25%;
+			background-color:#8C000D;
+			padding: 10px;
+			margin: 25px auto;
+			color: #FB9999;
+			font-weight: bolder;
+		}
+		input[type=text]:focus, input[type=password],focus{
+			background-color: #BC383A;
+			border: 3px solid #ED5355;
+		}
+		select{
+			width: 100%;
+			margin-left: 10px;
+			background-color: #BC383A;
+			color:#FB9999;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		input [type="submit"]{
+			padding: 10px;
+			margin: 25px auto;
+			
+		}
+		
+		
+	</style>
+
+<body>
+<header>
+  <h1>FORMULARIOS HTML</h1>
+</header>
+<nav>
+  <ul>
+            <li><a href="vvalpaginaweb.html">Inicio</a></li>
+            <li><a href="listasvall.html">Listas</a></li>
+            <li><a href="enlaces.html">Enlaces</a></li>
+            <li><a href="tablass.html">Tablas</a></li>
+            <li><a href="imagenes.html">Imagenes</a></li>
+            <li><a href="audiio.html">Audio</a></li>
+            <li><a href="videoo.html">Video</a></li>
+            <li><a href="foormulariovall.html">Formulario</a></li>
+  </ul> 
+</nav>
+<main>
+  <section>
+    <h2>FORMULARIOS USUARIO 1</h2>
+    <p>Al completar este formulario, aceptas que la información proporcionada será utilizada únicamente con fines de análisis para mejorar nuestros servicios y personalizar tu experiencia.</p>
+	   <form action="formulario_vall.html" method="get">
+	  <label id="">Nombre:</label>
+	  <input type="text" id="nombre" name="nombre">
+	  <label id="">Contraseña:</label>
+	  <input type="password" id="contrasena" name="contrasena">
+	 <input type="submit" value="Enviar">
+	  </form>
+  </section>
+<section>
+    <h2>FORMULARIOS USUARIO 2</h2>
+    <p>Al completar este formulario, aceptas que la información proporcionada será utilizada únicamente con fines de análisis para mejorar nuestros servicios y personalizar tu experiencia.</p>
+    <form id="form1" name="form1" method="post">
+<label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre">
+          <label for="edad">Edad:</label>
+          <input type="number" name="edad" id="edad" min="18" max="100">
+<label for="select">Estado:</label>
+          <select name="estado" id="estado">
+		    <option value="Aguacalientes">Aguacalientes</option>
+			   <option value="Colima">Colima</option>
+			   <option value="Durango">Durango</option> 
+			  <option value="Jalisco">Jalisco</option> 
+			  <option value="Nayarit">Nayarit</option>
+			  <option value="Puebla">Pubela</option>
+	  </select>
+    </form>
+    <input type="submit" name="submit" id="submit" value="Enviar">
+  </section>
+  <section>
+    <h2>FORMULARIOS USUARIO 3</h2>
+    <p>Nos gustaria saber un póco mas sobre ti, te pedimos que llenes estos datos, al completar este formulario, aceptas que la información proporcionada será utilizada únicamente con fines de análisis.</p>
+    <form id="form2" name="form2" method="post">
+      <label for="textfield">Nombre:&nbsp;</label>
+      <input type="text" name="textfield" id="textfield">
+		<label for="Genero"> Genero:</label>
+      <table  style="width: 40%";>
+        <tr>
+          <td><label> Femenino</label></td>
+			<td><input type="radio" name="Genero" value="fem" id="Genero_0"></td>
+        </tr>
+        <tr>
+          <td><label> Masculino</label></td>
+           <td><input type="radio" name="Genero" value="mas" id="Genero_1"></td>
+        </tr>
+        <tr>
+          <td><label> Otro</label></td>
+            <td><input type="radio" name="Genero" value="Otro" id="Genero_2"></td>
+        </tr>
+      </table>
+	  <label for="musica">¿Cuál es tu genero musical favorito?</label>
+		
+		  <label>
+		    Pop</label> <input type="checkbox" name="Música" value="pop" id="Muacutesica_0">
+		  <br>
+		  <label>
+		    Rock</label><input type="checkbox" name="Música" value="rock" id="Muacutesica_1">
+		  <br>
+		  <label>
+		    Tropical</label><input type="checkbox" name="Música" value="tropical" id="Muacutesica_2">
+		  <br>
+		  <label>
+		    Jazz</label><input type="checkbox" name="Música" value="jazz" id="Muacutesica_3">
+		  <br>
+		  <label>
+		    Kpop</label><input type="checkbox" name="Música" value="kpop" id="Muacutesica_4">
+		  <br>
+	  
+      <input type="submit" name="submit" id="submit" value="Enviar">
+    </form>
+	   
+  </section>
+  <section>
+    <h2>FORMULARIOS USUARIO 4</h2>
+    <p>Este formulario esta dirigido a mis amigos más cercanos para saber que tanto saben sobre mi.</p>
+    <form id="form3" name="form3" method="post">
+      <label for="textfield3">¿Cuál es su artista urbano favorito?:</label>
+      <input type="text" name="textfield3" id="textfield3">
+      <label for="textfield4">¿Cuál es su pasatiempo?:</label>
+      <input type="text" name="textfield4" id="textfield4">									  
+      <label for="textfield5">¿Cuánto hermanos tiene?:&nbsp;&nbsp;</label>
+      <input type="number">		
+      <label for="textfield6">¿Miedo más grande?:&nbsp;</label>
+        <label>
+          <input type="radio" name="&iquest;Miedo mas grande?" value="altu" id="iquestMiedomasgrande_0">
+          Alturas</label>
+        <br>
+        <label>
+          <input type="radio" name="&iquest;Miedo mas grande?" value="rep" id="iquestMiedomasgrande_1">
+          Reptiles</label>
+        <br>
+        <label>
+          <input type="radio" name="&iquest;Miedo mas grande?" value="chuc" id="iquestMiedomasgrande_2">
+          Chucky</label>
+        <br>
+        <label>
+          <input type="radio" name="&iquest;Miedo mas grande?" value="mar" id="iquestMiedomasgrande_3">
+          Mar</label>
+        <br>
+																									  <label>
+          <input type="radio" name="&iquest;Miedo mas grande?" value="mar" id="iquestMiedomasgrande_3">
+          Payasos</label>
+        <br>
+     
+		<label for="select">¿Qué deporte hizo cuando era niña?:</label>
+		<select>
+		<option value="Tenis">Tenis</option>
+		<option value="Basquetboll">Basquetboll</option>
+		<option value="Natacion">Natacion</option> 
+		<option value="Taekwondo">Taekwondo</option> 
+		<option value="Karate">Karate</option>
+	   <option value="Voleiboll">Voleiboll</option>				   
+		</select>																							  						   
+      								  												
+      <label for="textfield7">¿Cuál es tu comida favorita?:&nbsp;</label>
+      <input type="text" name="textfield7" id="textfield7">
+      <label for="textfield8">¿Qué película es su favorita?&nbsp;</label>
+      <input type="text" name="textfield8" id="textfield8">
+      <label for="textfield9">¿Cuándo es su cumpleaños?:&nbsp;</label>
+	<input type="date">
+      <label for="textfield10">¿Piloto favorito de la Formula uno?; &nbsp;</label>
+      <input type="text" name="textfield10" id="textfield10">
+      <label for="textfield11">¿Cuál es su trabajo soñado?:</label>
+      <input type="text" name="textfield11" id="textfield11">
+<label for="textfield2">¿Es team Jamaica o Horchata?:</label>
+	<input type="radio">Jamaica
+	<input type="radio">Horchata
+      
+    </form>
+  </section>
+</main>
+<footer><h5>Elaboador por Valeria Rios Pérez</h5></footer>
+</body>
+</html>
